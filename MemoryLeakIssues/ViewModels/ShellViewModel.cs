@@ -17,7 +17,7 @@ public partial class ShellViewModel : ObservableObject
     {
         Layout.FocusedDockable = null;
 
-        _factory.Documents.VisibleDockables.Clear();
+        // _factory.Documents.VisibleDockables.Clear();
         // _factory.Layout.VisibleDockables.Clear();
 
         GC.Collect();

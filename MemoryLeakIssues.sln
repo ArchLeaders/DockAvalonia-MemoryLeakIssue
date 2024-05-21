@@ -5,6 +5,16 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryLeakIssues", "MemoryLeakIssues\MemoryLeakIssues.csproj", "{2B19D1E4-5A13-44F1-93CB-8AEDE2B39E58}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{52570A1F-F5F5-4A7B-A196-12C9CCBC30CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dock.Avalonia", "lib\Dock.Avalonia\src\Dock.Avalonia\Dock.Avalonia.csproj", "{E93681E9-94FC-4780-A590-4A30CF409CDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dock.Model", "lib\Dock.Avalonia\src\Dock.Model\Dock.Model.csproj", "{0DBA8293-4F1C-4B45-A705-2BAE5E9F9864}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dock.Model.Mvvm", "lib\Dock.Avalonia\src\Dock.Model.Mvvm\Dock.Model.Mvvm.csproj", "{3561278E-943D-4C1B-925E-C1A28E6741D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dock.Settings", "lib\Dock.Avalonia\src\Dock.Settings\Dock.Settings.csproj", "{A8CF3033-0BEE-45B0-89B4-80341839264D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +25,31 @@ Global
 		{2B19D1E4-5A13-44F1-93CB-8AEDE2B39E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B19D1E4-5A13-44F1-93CB-8AEDE2B39E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B19D1E4-5A13-44F1-93CB-8AEDE2B39E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E93681E9-94FC-4780-A590-4A30CF409CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93681E9-94FC-4780-A590-4A30CF409CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93681E9-94FC-4780-A590-4A30CF409CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93681E9-94FC-4780-A590-4A30CF409CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBA8293-4F1C-4B45-A705-2BAE5E9F9864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBA8293-4F1C-4B45-A705-2BAE5E9F9864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBA8293-4F1C-4B45-A705-2BAE5E9F9864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBA8293-4F1C-4B45-A705-2BAE5E9F9864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3561278E-943D-4C1B-925E-C1A28E6741D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3561278E-943D-4C1B-925E-C1A28E6741D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3561278E-943D-4C1B-925E-C1A28E6741D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3561278E-943D-4C1B-925E-C1A28E6741D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CF3033-0BEE-45B0-89B4-80341839264D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CF3033-0BEE-45B0-89B4-80341839264D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CF3033-0BEE-45B0-89B4-80341839264D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CF3033-0BEE-45B0-89B4-80341839264D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E93681E9-94FC-4780-A590-4A30CF409CDD} = {52570A1F-F5F5-4A7B-A196-12C9CCBC30CC}
+		{0DBA8293-4F1C-4B45-A705-2BAE5E9F9864} = {52570A1F-F5F5-4A7B-A196-12C9CCBC30CC}
+		{3561278E-943D-4C1B-925E-C1A28E6741D7} = {52570A1F-F5F5-4A7B-A196-12C9CCBC30CC}
+		{A8CF3033-0BEE-45B0-89B4-80341839264D} = {52570A1F-F5F5-4A7B-A196-12C9CCBC30CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C2FB2D1-6CE0-449A-A57D-CEBF383FFF29}
