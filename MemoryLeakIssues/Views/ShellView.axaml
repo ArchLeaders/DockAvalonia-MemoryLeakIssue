@@ -1,0 +1,23 @@
+<Window x:Class="MemoryLeakIssues.Views.ShellView"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dock="using:Dock.Avalonia.Controls"
+        xmlns:vm="using:MemoryLeakIssues.ViewModels"
+        Title="ShellView"
+        Width="650"
+        Height="450"
+        d:DesignHeight="450"
+        d:DesignWidth="800"
+        x:DataType="vm:ShellViewModel"
+        mc:Ignorable="d">
+    <Grid RowDefinitions="*,Auto">
+        <dock:DockControl Margin="5" Layout="{Binding Layout}" />
+        <StackPanel Grid.Row="1"
+                    Margin="5"
+                    Orientation="Horizontal">
+            <Button Command="{Binding CleanupCommand}" Content="Cleanup" />
+        </StackPanel>
+    </Grid>
+</Window>
